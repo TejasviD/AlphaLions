@@ -4,6 +4,8 @@ nav {
   align-items: center;
   .brand-container {
     .brand {
+      height:80px;
+      width:80px;
       img {
         height: 100%;
       }
@@ -64,8 +66,11 @@ nav {
       align-items: center;
       width: 100%;
       .brand {
+        height:30px;
+        width:30px;
         img {
           height: 1.5rem;
+          
         }
       }
       .toggle-container {

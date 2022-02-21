@@ -6,8 +6,9 @@ import Home from "./components/Home";
 import Like from "./components/Like";
 import Navbar from "./components/Navbar";
 import Release from "./components/Release";
-import ScrollToTop from "./components/ScrollToTop";
+//import ScrollToTop from "./components/ScrollToTop";
 import Discord from "./components/discord";
+import Faq from "./components/Faq";
 import Signup from "./components/Signup";
 import SuperRare from "./components/SuperRare";
 import scrollreveal from "scrollreveal";
@@ -34,6 +35,7 @@ function App() {
         .super-rare,
         .releases,
         .like,
+        .faq,
         .signup,
         footer
     `,
@@ -60,6 +62,7 @@ function App() {
       <SuperRare />
       <Release />
       <Like />
+      <Faq />
       <Signup />
       <Footer />
     </div>
