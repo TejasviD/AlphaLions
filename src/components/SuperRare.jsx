@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "./Card";
+import CardCopy from "./CardCopy";
 import super1 from "../assets/super1.png";
 import super2 from "../assets/super2.png";
 import super3 from "../assets/super3.png";
@@ -51,7 +51,7 @@ export default function SuperRare() {
       </div>
       <div className="cards">
         {data.map(({ image, series, title, price, tag, time }, index) => (
-          <Card
+          <CardCopy
             image={image}
             series={series}
             title={title}

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import discordText from "../assets/discordText.png";
 import discord from "../assets/discord.png";
 
@@ -9,8 +9,6 @@ export default function discordInvite(){
         //   <img src={discordText} alt="super1" />
         //   </a>
         // </div>
-
-
 
             <a href="#">
                 <div className="discordLogo" >

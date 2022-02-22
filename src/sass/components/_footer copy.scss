@@ -1,37 +1,21 @@
 footer {
-  margin: 6rem 0 0rem 0;
+  margin: 6rem 0;
   display: flex;
   flex-direction: column;
-  gap: 4rem;
-  border-top: 1px solid hsla(0, 0%, 94.5%, 0.1);
-  //To review with Imad
-  //border-top: 1px solid rgb(241, 241, 241);
-  padding-top: 40px;
+  gap: 5rem;
   .upper {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
     color: var(--accent-color3);
     .brand-container {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
       gap: 1.5rem;
       .brand {
         img {
         }
       }
       p {
-        color: hsla(0, 0%, 94.5%, 0.25);
-        font-size: 15px;
-        line-height: 1.24em;
-        text-align: center;
-        letter-spacing: -0.04em;
-        text-decoration: underline;
-      }
-      p:hover{
-        text-shadow: 0 0 12px rgb(217 216 218 / 80%);
       }
       ul {
         list-style-type: none;
@@ -40,13 +24,6 @@ footer {
         li {
         }
       }
-    }
-    .icon-link{
-      color:#fff;
-    }
-    .icon-link:hover{
-      color:#fff;
-      text-shadow: 0 0 12px rgb(217 216 218 / 80%);
     }
     .links {
       display: flex;
@@ -72,15 +49,9 @@ footer {
   }
   .lower {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
     span {
-      //color: var(--accent-color3);
-      color: hsla(0, 0%, 94.5%, 0.25);
-      font-size: 15px;
-      line-height: 1.24em;
-      text-align: center;
-      letter-spacing: -0.04em;
+      color: var(--accent-color3);
     }
   }
 }

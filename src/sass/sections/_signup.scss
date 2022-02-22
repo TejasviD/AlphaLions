@@ -13,13 +13,10 @@
       flex-direction: column;
       gap: 2rem;
       align-items: flex-start;
-      .sub-title {
+      .title {
         color: var(--pink);
         text-transform: uppercase;
         letter-spacing: 0.1rem;
-      }
-      .title {
-        color: var(--accent-color1);
       }
       .description {
         color: var(--accent-color3);

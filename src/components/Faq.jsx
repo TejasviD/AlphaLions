@@ -13,22 +13,29 @@ export default function Faq(){
     };
 
     return (
-        <div className="wrapper">
-            <div className="faq-wrap">
-                {data.map((item,i) => (
-                    <div className="faq-block" key={item.id}>
-                        <div className="faq-top" onClick={() => toggle(i)}>
-                            <h2 className="faq-title">
-                                {item.question}
-                            </h2>
-                            <span>{selected === i ? '-': '+'}</span>
+        <div className="faq-section">
+            <div className="faq-title">
+                    <h2 className="faq">
+                        FAQ
+                    </h2>
+            </div>
+            <div className="wrapper">
+                <div className="faq-wrap">
+                    {data.map((item,i) => (
+                        <div className="faq-block" key={item.id}>
+                            <div className="faq-top" onClick={() => toggle(i)}>
+                                <h2 className="faq-title">
+                                    {item.question}
+                                </h2>
+                                <span>{selected === i ? '-': '+'}</span>
+                            </div>
+                            <div className={selected === i ? 'faq-content show' : 'faq-content'}>
+                                {item.answer}
+                            </div>
+                            <div className="faq-bottom"></div>   
                         </div>
-                        <div className={selected === i ? 'faq-content show' : 'faq-content'}>
-                            {item.answer}
-                        </div>
-                        <div className="faq-bottom"></div>   
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
         </div>
         

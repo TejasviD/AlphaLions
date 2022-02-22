@@ -3,7 +3,6 @@ import Card from "./Card";
 import icon from "../assets/icon.png";
 import super1 from "../assets/super1.png";
 import release2 from "../assets/release2.png";
-import discordText from "../assets/discordText.png";
 
 export default function Free() {
   return (

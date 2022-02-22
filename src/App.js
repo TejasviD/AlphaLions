@@ -9,7 +9,9 @@ import Release from "./components/Release";
 //import ScrollToTop from "./components/ScrollToTop";
 import Discord from "./components/discord";
 import Faq from "./components/Faq";
+import Team from "./components/Team";
 import Signup from "./components/Signup";
+import JoinCommunity from "./components/JoinCommunity";
 import SuperRare from "./components/SuperRare";
 import scrollreveal from "scrollreveal";
 import "./sass/index.scss";
@@ -33,10 +35,11 @@ function App() {
         .free,
         .clients,
         .super-rare,
+        .team,
         .releases,
         .like,
         .faq,
-        .signup,
+        .community,
         footer
     `,
         {
@@ -62,8 +65,9 @@ function App() {
       <SuperRare />
       <Release />
       <Like />
+      <Team />
       <Faq />
-      <Signup />
+      <JoinCommunity />
       <Footer />
     </div>
   );

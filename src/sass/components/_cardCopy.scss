@@ -1,12 +1,12 @@
-.teamCard {
+.card {
   background-color: var(--card-color);
   width: max-content;
   border-radius: 1rem;
-  .card-image {
+  &-image {
     img {
     }
   }
-  .card-content {
+  &-content {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -22,7 +22,6 @@
         font-size: 20px;
         line-height: 20px;
         text-transform: uppercase;
-        text-shadow: 0 0 12px rgb(217 216 218 / 80%);
       }
       .card-top {
         color: var(--accent-color3);
