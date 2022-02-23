@@ -41,6 +41,7 @@ export default function Team() {
             image={image}
             series={name}
             title={role}
+            key={index}
           />
         ))}
       </div>
