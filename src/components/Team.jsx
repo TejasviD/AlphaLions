@@ -46,5 +46,59 @@ export default function Team() {
         ))}
       </div>
     </div>
+    // <Grid container spacing={3} justifyContent="center">
+    //   <Grid item xs={12} sm={6} md={3}>
+    //     <Tilt>
+    //       <img src={super1} alt="super1" />
+    //     </Tilt>
+    //     <div className="card-content">
+    //       <div className="card-heading">
+    //         <h3 className="card-series">Imad</h3>
+    //       </div>
+    //       <div className="card-details">
+    //         <p className="card-title">The visionary</p>
+    //       </div>
+    //     </div>
+    //   </Grid>
+    //   <Grid item xs={12} sm={6} md={3}>
+    //     <Tilt>
+    //       <img src={super1} alt="super1" />
+    //     </Tilt>
+    //     <div className="card-content">
+    //       <div className="card-heading">
+    //         <h3 className="card-series">Imad</h3>
+    //       </div>
+    //       <div className="card-details">
+    //         <p className="card-title">The visionary</p>
+    //       </div>
+    //     </div>
+    //   </Grid>
+    //   <Grid item xs={12} sm={6} md={3}>
+    //     <Tilt>
+    //       <img src={super1} alt="super1" />
+    //     </Tilt>
+    //     <div className="card-content">
+    //       <div className="card-heading">
+    //         <h3 className="card-series">Imad</h3>
+    //       </div>
+    //       <div className="card-details">
+    //         <p className="card-title">The visionary</p>
+    //       </div>
+    //     </div>
+    //   </Grid>
+    //   <Grid item xs={12} sm={6} md={3}>
+    //     <Tilt>
+    //       <img src={super1} alt="super1" />
+    //     </Tilt>
+    //     <div className="card-content">
+    //       <div className="card-heading">
+    //         <h3 className="card-series">Imad</h3>
+    //       </div>
+    //       <div className="card-details">
+    //         <p className="card-title">The visionary</p>
+    //       </div>
+    //     </div>
+    //   </Grid>
+    // </Grid>
   );
 }
