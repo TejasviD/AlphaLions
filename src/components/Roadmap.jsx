@@ -17,10 +17,19 @@ class Roadmap extends React.Component {
     componentWillUnmount(){
       document.removeEventLister("scroll", this.onScrollPage);
     }
+    //document.getElementById("navbar").clientHeight + document.getElementById("home").clientHeight
+    //+ document.getElementById("superare").clientHeight +
     onScrollPage(){
-          const winHeightPx =
-        document.documentElement.scrollHeight -
-        document.documentElement.clientHeight;
+        console.log("timeline height:" + document.getElementById("timeline").clientHeight)
+        console.log("client height:" + document.documentElement.clientHeight)
+        console.log("navbar height:" + document.getElementById("navbar").clientHeight)
+        console.log("home height:" + document.getElementById("home").clientHeight)
+        console.log("superare height:" + document.getElementById("superare").clientHeight)
+        console.log("scroll height:" + document.documentElement.scrollHeight)
+        console.log("state:" + this.state.scrolled);
+          const winHeightPx = 1200+
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight;
       const scrolledPercentage = `${this.state.scrolled / winHeightPx * 100}%`;
       this.setState({
          scrolledbar: scrolledPercentage,
@@ -48,6 +57,7 @@ class Roadmap extends React.Component {
         color:"#fff",
         // -webkit-filter: blur(6px),
         boxShadow: "0 0 12px rgb(217 216 218 / 80%)",
+        willChange:"width, height",
         height: this.state.scrolledbar
       };
   

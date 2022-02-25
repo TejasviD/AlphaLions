@@ -9,7 +9,7 @@ export default function Navbar({ changeTheme, currentTheme }) {
   const [navState, setNavState] = useState(false);
   return (
     <nav>
-      <div className="brand-container">
+      <div className="brand-container" id="navbar">
         <div className="brand">
           <img src={alpha} alt="logo" />
         </div>

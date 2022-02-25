@@ -41,7 +41,7 @@ export default function SuperRare() {
     },
   ];
   return (
-    <div className="super-rare">
+    <div className="super-rare" id="superare">
       <div className="title-container">
         <h2 className="title">LE Super Rare Auction</h2>
         <p className="description">

@@ -2,7 +2,7 @@ import React from "react";
 import home from "../assets/home.png";
 export default function Home() {
   return (
-    <div className="home">
+    <div className="home" id="home">
       <div className="container">
         <div className="content">
           <p className="sub-title">Launching Soon</p>
