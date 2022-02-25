@@ -2,7 +2,7 @@ import React from "react";
 
 export default function JoinCommunity() {
     return (
-        <div className="community">
+        <div className="community" id="community">
         <div className="container">
           <div className="content">
             <h1 className="title">JOIN THE COMMUNITY!</h1>

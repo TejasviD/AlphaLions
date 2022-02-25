@@ -9,6 +9,7 @@ import Release from "./components/Release";
 //import ScrollToTop from "./components/ScrollToTop";
 import Discord from "./components/discord";
 import Faq from "./components/Faq";
+import Carousel from "./components/Carousel";
 import Roadmap from "./components/Roadmap";
 import Team from "./components/Team";
 import Signup from "./components/Signup";
@@ -18,10 +19,10 @@ import scrollreveal from "scrollreveal";
 import ReactDOM from 'react-dom';  
 import "./sass/index.scss";
 function App() {
-  // const [theme, setTheme] = useState("dark");
-  // const changeTheme = () => {
-  //   theme === "dark" ? setTheme("light") : setTheme("dark");
-  // };
+  const [theme, setTheme] = useState("dark");
+  const changeTheme = () => {
+    theme === "dark" ? setTheme("light") : setTheme("dark");
+  };
   useEffect(() => {
     const registerAnimations = () => {
       const sr = scrollreveal({
@@ -37,6 +38,7 @@ function App() {
         .free,
         .clients,
         .super-rare,
+        .carousel,
         .roadmap,
         .team,
         .releases,
@@ -74,11 +76,12 @@ function App() {
     //   <JoinCommunity />
     //   <Footer />
     // </div>
-    <div className="app-container">
+    <div data-theme={theme}  className="app-container">
       <Discord />
-      <Navbar/>
+      <Navbar changeTheme={changeTheme} currentTheme={theme}/>
       <Home />
       <SuperRare />
+      <Carousel />
       <Roadmap />
       <Team />
       <Faq />

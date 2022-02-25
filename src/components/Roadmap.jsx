@@ -8,7 +8,7 @@ class Roadmap extends React.Component {
         scrolled: 0,
         scrolledbar: 0,
       };
-      this.onScrollPage = this.onScrollPage.bind(this);
+    this.onScrollPage = this.onScrollPage.bind(this);
     }
     componentDidMount(){
       document.addEventListener("scroll", this.onScrollPage);
@@ -17,8 +17,8 @@ class Roadmap extends React.Component {
     componentWillUnmount(){
       document.removeEventLister("scroll", this.onScrollPage);
     }
-    //document.getElementById("navbar").clientHeight + document.getElementById("home").clientHeight
-    //+ document.getElementById("superare").clientHeight +
+    // document.getElementById("navbar").clientHeight + document.getElementById("home").clientHeight
+    // + document.getElementById("superare").clientHeight +
     onScrollPage(){
         console.log("timeline height:" + document.getElementById("timeline").clientHeight)
         console.log("client height:" + document.documentElement.clientHeight)
@@ -27,9 +27,19 @@ class Roadmap extends React.Component {
         console.log("superare height:" + document.getElementById("superare").clientHeight)
         console.log("scroll height:" + document.documentElement.scrollHeight)
         console.log("state:" + this.state.scrolled);
-          const winHeightPx = 1200+
+        //   const winHeightPx = 1200+
+        //   document.documentElement.scrollHeight -
+        //   document.documentElement.clientHeight;
+
+        //   const winHeightPx =
+        //   document.documentElement.scrollHeight -
+        //   (document.documentElement.clientHeight);
+
+          const winHeightPx =
           document.documentElement.scrollHeight -
-          document.documentElement.clientHeight;
+          (document.getElementById("navbar").clientHeight + document.getElementById("home").clientHeight
+             + document.getElementById("superare").clientHeight + 50);
+
       const scrolledPercentage = `${this.state.scrolled / winHeightPx * 100}%`;
       this.setState({
          scrolledbar: scrolledPercentage,

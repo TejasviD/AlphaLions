@@ -9,28 +9,32 @@ export default function Team() {
   const data = [
     {
       image: super1,
-      name: "Imad",
+      name: "card",
+      //name: "Imad",
       role: "The visionary",
     },
     {
       image: super2,
-      name: "Shini",
+      name: "card",
+      //name: "Shini",
       role: "The Architect",
     },
     {
       image: super3,
-      name: "UltraPog",
+      name: "card",
+      //name: "UltraPog",
       role: "The Artist",
     },
     {
       image: super4,
-      name: "Mexican",
+      name: "card",
+      //name: "Mexican",
       role: "The Architect",
     },
 
   ];
   return (
-    <div className="team">
+    <div className="team" id="team">
       <div className="title-container">
         <h2 className="title">MEET THE</h2>
         <h2 className="title2">TEAM</h2>

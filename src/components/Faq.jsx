@@ -13,7 +13,7 @@ export default function Faq(){
     };
 
     return (
-        <div className="faq-section">
+        <div className="faq-section" id="faq">
             <div className="faq-title">
                     <h2 className="faq">
                         FAQ

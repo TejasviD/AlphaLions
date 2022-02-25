@@ -25,7 +25,7 @@ export default function Footer() {
   ];
   return (
     <footer>
-      <div className="upper">
+      <div className="upper" id="footer">
         <div className="brand-container">
           <ul>
             <li>
