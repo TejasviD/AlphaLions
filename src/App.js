@@ -70,7 +70,7 @@ function App() {
       <Story />
       <Carousel />
       {/* <RoadmapCopy /> */}
-      {/* <Roadmap /> */}
+      <Roadmap />
       <Team />
       <Faq />
       <JoinCommunity />
