@@ -1,78 +1,69 @@
 import React from "react";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 
-class Roadmap extends React.Component {
-    constructor(props){
-      super(props);
-      this.state ={
-        scrolled: 0,
-        scrolledbar: 0,
-      };
-    this.onScrollPage = this.onScrollPage.bind(this);
-    }
-    componentDidMount(){
-      document.addEventListener("scroll", this.onScrollPage);
-    }
+export default function Roadmap() {
+    // let position = 0;
+    // const [scrollPosition, setScrollPosition] = useState(0);
+    // const handleScroll = () => {
+    //   position = window.pageYOffset;
+    //   setScrollPosition(position);
+    //   console.log("position:" + position);
+    // };
+  
+    // useEffect(() => {
+    //   window.addEventListener("scroll", handleScroll);
+  
+    //   return () => {
+    //     window.removeEventListener("scroll", handleScroll);
+    //   };
+    // }, []);
     
-    componentWillUnmount(){
-      document.removeEventLister("scroll", this.onScrollPage);
-    }
     // document.getElementById("navbar").clientHeight + document.getElementById("home").clientHeight
     // + document.getElementById("superare").clientHeight +
-    onScrollPage(){
-        console.log("timeline height:" + document.getElementById("timeline").clientHeight)
-        console.log("client height:" + document.documentElement.clientHeight)
-        console.log("navbar height:" + document.getElementById("navbar").clientHeight)
-        console.log("home height:" + document.getElementById("home").clientHeight)
-        console.log("superare height:" + document.getElementById("superare").clientHeight)
-        console.log("scroll height:" + document.documentElement.scrollHeight)
-        console.log("state:" + this.state.scrolled);
-        //   const winHeightPx = 1200+
-        //   document.documentElement.scrollHeight -
-        //   document.documentElement.clientHeight;
+ 
+//     onScrollPage(){
+//         const winHeightPx =
+//         document.documentElement.scrollHeight -
+//         (document.documentElement.clientHeight);
 
-        //   const winHeightPx =
-        //   document.documentElement.scrollHeight -
-        //   (document.documentElement.clientHeight);
+//       //   const winHeightPx =
+//       //   document.documentElement.scrollHeight -
+//       //   (document.getElementById("navbar").clientHeight + document.getElementById("home").clientHeight
+//       //      + document.getElementById("superare").clientHeight + 50);
 
-          const winHeightPx =
-          document.documentElement.scrollHeight -
-          (document.getElementById("navbar").clientHeight + document.getElementById("home").clientHeight
-             + document.getElementById("superare").clientHeight + 50);
+//     const scrolledPercentage = `${this.state.scrolled / winHeightPx * 100}%`;
+//     this.setState({
+//        scrolledbar: scrolledPercentage,
+//     })
+//     this.setState({
+//        scrolled: document.documentElement.scrollTop,
+//     });
+//   };
 
-      const scrolledPercentage = `${this.state.scrolled / winHeightPx * 100}%`;
-      this.setState({
-         scrolledbar: scrolledPercentage,
-      })
-      console.log(document.documentElement.scrollTop);
-      this.setState({
-         scrolled: document.documentElement.scrollTop,
-      });
-    }
-    render(){
-       const progressContainerStyle = {
-        background: "#f8bbd0",
-        boxShadow: "0 2px 4px rgba(0, 0, 0, 0.3)",
-        height: "5px",
-        position: "fixed",
-        top: 0,
-        left: 0,
-        width: "100vw",
-        zIndex: 99
-      };
+    // const winHeightPx =
+    // document.documentElement.scrollHeight -
+    // (document.documentElement.clientHeight);
+    //var element = document.getElementById('roadmap');
+
+     //var domRect = element.getBoundingClientRect();
+
+    let percent = `${document.documentElement.scrollHeight / document.documentElement.clientHeight * 100}%`;
+    //let percent = `${position - 3050 / document.documentElement.clientHeight * 100}%`;
+
   
       const progressBarStyle = {
-        width: "3px",
+        width: "3px !important",
         background: "#fff !important",
         color:"#fff",
         // -webkit-filter: blur(6px),
         boxShadow: "0 0 12px rgb(217 216 218 / 80%)",
         willChange:"width, height",
-        height: this.state.scrolledbar
+        // height: this.state.scrolledbar
+        height: percent
       };
   
       return (
-        <div className="roadmap">
+        <div className="roadmap" id="roadmap">
         <section className="timeline-section" id="timeline">
             <div className="timeline-progress" style={progressBarStyle}>
             </div>
@@ -159,10 +150,8 @@ class Roadmap extends React.Component {
         </section>
     </div>
       );
-    }
   }
 
-  export default Roadmap;  
 
   
 // export default function Roadmap() {

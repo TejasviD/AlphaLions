@@ -1,0 +1,65 @@
+.story{
+    //display: flex;
+    // justify-content: center;
+    //margin: 10rem 0;
+    padding-top: 5rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background: url(/assets/roadmap_gg.png);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 1060px;
+    h2{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-family: 'Hanson', sans-serif;
+        color: #fff;
+        font-size: 35px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        position: relative;
+        margin-bottom: 50px;
+        text-shadow: 0 0 12px rgb(217 216 218 / 80%);
+        align-items: center;
+    }
+    .story-card{
+        max-width: 60%;
+        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+        //background-color: #2f363e;
+        padding: 40px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.1);
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(5px);
+        .story-content{
+            color: #efeff4;
+        }
+    }
+}
+
+@media screen and (min-width: 280px) and (max-width: 540px) {
+    .story {
+        h2{
+        }
+        .story-card{
+            max-width: 85%;
+            box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+            //background-color: #2f363e;
+            padding: 30px;
+            font-family: 'Hanson', sans-serif;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+            border-left: 1px solid rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(5px);
+            .story-content{
+                color: #efeff4;
+                line-height: 24px;
+            }
+        }
+    }
+}

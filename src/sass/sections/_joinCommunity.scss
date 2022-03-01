@@ -3,6 +3,10 @@
     overflow-y: hidden;
     justify-content: center;
     align-items: center;
+    background: url(/assets/roadmap_gg.png);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
     .container {
       display: grid;
       //grid-template-columns: 1fr 1fr;
@@ -21,6 +25,10 @@
             letter-spacing: 1px;
             text-transform: uppercase;
             text-shadow: 0 0 12px rgb(217 216 218 / 80%);
+            display: flex;
+        }
+        .sub-title{
+          opacity: 0;
         }
         .description {
             font-family: Hanson, sans-serif;
@@ -30,25 +38,34 @@
             background: transparent;
             border-radius: 16px;
             color: #fff;
-            font-family: Hanson, sans-serif;
+            font-family: 'Hanson', sans-serif;
             font-size: 20px;
             font-weight: 500;
             padding: 16px 72px;
             text-transform: uppercase;
-            border: 1px solid #fff;
+            border: 2px solid #fff;
             transition: all .5s ease;
             margin: 5vh 0;
             z-index: 2;
             text-decoration: none;
         }
+        //To see with Robot Imad
+        // .join-discord:hover{
+        //     color: black;
+        //     background-color: #fff;
+        //     text-shadow: 0 0 12px rgb(217 216 218 / 80%);
+        //     cursor: pointer;
+        //     text-decoration: none;
+        //     transition: all .5s ease;
+        //     box-shadow: 0 0 12px rgb(217 216 218 / 80%);
+        // }
         .join-discord:hover{
-            color: black;
-            background-color: #fff;
-            text-shadow: 0 0 12px rgb(217 216 218 / 80%);
-            cursor: pointer;
-            text-decoration: none;
-            transition: all .5s ease;
-            box-shadow: 0 0 12px rgb(217 216 218 / 80%);
+          color: #fff;
+          text-shadow: 0 0 12px rgb(217 216 218 / 80%);
+          cursor: pointer;
+          text-decoration: none;
+          transition: all .5s ease;
+          box-shadow: 0 0 12px rgb(217 216 218 / 80%);
         }
       }
     }

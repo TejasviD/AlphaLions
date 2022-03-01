@@ -3,13 +3,17 @@ import Clients from "./components/Clients";
 import Footer from "./components/Footer";
 import Free from "./components/Free";
 import Home from "./components/Home";
+import Landing from "./components/Landing";
 import Like from "./components/Like";
 import Navbar from "./components/Navbar";
+import About from "./components/About";
+import Story from "./components/Story";
 import Release from "./components/Release";
 //import ScrollToTop from "./components/ScrollToTop";
 import Discord from "./components/discord";
 import Faq from "./components/Faq";
 import Carousel from "./components/Carousel";
+import RoadmapCopy from "./components/RoadmapCopy";
 import Roadmap from "./components/Roadmap";
 import Team from "./components/Team";
 import Signup from "./components/Signup";
@@ -35,14 +39,11 @@ function App() {
         `
         nav,
         .home,
-        .free,
-        .clients,
-        .super-rare,
+        .about,
+        .story,
         .carousel,
-        .roadmap,
+        .roadmap
         .team,
-        .releases,
-        .like,
         .faq,
         .community,
         footer
@@ -55,34 +56,21 @@ function App() {
     registerAnimations();
   }, []);
   window.setTimeout(() => {
-    const home = document.getElementsByClassName("home");
-    home[0].style.transform = "none";
+    // const home = document.getElementsByClassName("home");
+    // home[0].style.transform = "none";
     const nav = document.getElementsByTagName("nav");
     nav[0].style.transform = "none";
   }, 1500);
   return (
-    // <div data-theme={theme} className="app-container">
-    //   <Discord />
-    //   <Navbar changeTheme={changeTheme} currentTheme={theme} />
-    //   <Home />
-    //   <Free />
-    //   <Clients />
-    //   <SuperRare />
-    //   <Release />
-    //   <Like />
-    //   <Roadmap />
-    //   <Team />
-    //   <Faq />
-    //   <JoinCommunity />
-    //   <Footer />
-    // </div>
     <div data-theme={theme}  className="app-container">
       <Discord />
       <Navbar changeTheme={changeTheme} currentTheme={theme}/>
-      <Home />
-      <SuperRare />
+      <Landing />
+      <About />
+      <Story />
       <Carousel />
-      <Roadmap />
+      {/* <RoadmapCopy /> */}
+      {/* <Roadmap /> */}
       <Team />
       <Faq />
       <JoinCommunity />
