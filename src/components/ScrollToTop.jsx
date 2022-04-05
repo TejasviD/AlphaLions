@@ -10,9 +10,6 @@ export default function ScrollToTop() {
       <a href="#">
         <BsChevronUp />
       </a>
-      {/* <a href="#">
-      <img src={discordText} alt="discordText" />
-      </a> */}
     </div>
     
   );

@@ -22,7 +22,7 @@ const Roadmap = () => {
 
   const onScrollPage = () => {
     if (!inView) {
-      console.log("Not In View");
+      //console.log("Not In View");
       return;
     }
     const rect = ref.current.getBoundingClientRect();
@@ -32,7 +32,7 @@ const Roadmap = () => {
     if (trigger > 0) {
       setScrolled(calculatedScroll);
     }
-    console.log("In view", calculatedScroll, "trigger-->", trigger, initHeight);
+    //console.log("In view", calculatedScroll, "trigger-->", trigger, initHeight);
   };
   const setRefs = useCallback(
     (node) => {
@@ -40,7 +40,7 @@ const Roadmap = () => {
       inViewRef(node);
       const height = getComputedStyle(node).height;
       setInitHeight(parseInt(height));
-      console.log("[FIRST useEffect]", height);
+      //console.log("[FIRST useEffect]", height);
     },
     [inViewRef]
   );
@@ -53,7 +53,8 @@ const Roadmap = () => {
     height: scrolled,
   };
   return (
-    <div className="roadmap">
+    <div className="roadmap" id="roadmap">
+      <h2>ROADMAP</h2>
       <section className="timeline-section" id="timeline">
         <div className="timeline-progress" style={progressBarStyle}></div>
         <div className="timeline-items">
@@ -63,12 +64,16 @@ const Roadmap = () => {
             <div className="timeline-percent">#1</div>
             <div className="timeline-content">
               <div className="timeline-number">
-                <h3>10%</h3>
+                <h3>
+                  10%
+                </h3>
               </div>
-              <h2>timeline item title</h2>
+              <h2>Launch of Discord</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+                Set up of discord server to allow the community to interact with each other and discuss about the project.
+                <br />
+                <br />
+                The discord is also where all important information related to the project will be announced.{" "}
               </p>
             </div>
           </div>
@@ -79,10 +84,9 @@ const Roadmap = () => {
               <div className="timeline-number">
                 <h3>20%</h3>
               </div>
-              <h2>timeline item title</h2>
+              <h2>Launch of AlphaLions website</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+                The website will serve as a “showcase website” in the first place.{" "}
               </p>
             </div>
           </div>
@@ -93,10 +97,9 @@ const Roadmap = () => {
               <div className="timeline-number">
                 <h3>30%</h3>
               </div>
-              <h2>timeline item title</h2>
+              <h2>Marketing / Partnership</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+                The team will indulge in marketing and partnership strategies in order to bring to you unique opportunities and benefits.{" "}
               </p>
             </div>
           </div>
@@ -107,10 +110,9 @@ const Roadmap = () => {
               <div className="timeline-number">
                 <h3>40%</h3>
               </div>
-              <h2>timeline item title</h2>
+              <h2>Mint of AlphaLions NFTS</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+                1,500 AlphaLions NFTs  will be available on #cronos and once sell out, they will be available on secondary markets ( Ebisus’Bay ).{" "}
               </p>
             </div>
           </div>
@@ -121,10 +123,9 @@ const Roadmap = () => {
               <div className="timeline-number">
                 <h3>50%</h3>
               </div>
-              <h2>timeline item title</h2>
+              <h2>Airdrop &amp; royalites</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+                Random airdrop each week to reward the holders of AlphaLions NFTs.{" "}
               </p>
             </div>
           </div>
@@ -135,10 +136,12 @@ const Roadmap = () => {
               <div className="timeline-number">
                 <h3>60%</h3>
               </div>
-              <h2>timeline item title</h2>
+              <h2>DECENTRALIZED AUTONOMOUS ORGANIZATION</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+                Make a real impact.
+                <br />
+                <br />
+                Everyone who owns an AlphaLions NFT can decide on the future direction of the project through our DAO. It’s all about community.{" "}
               </p>
             </div>
           </div>
@@ -149,15 +152,40 @@ const Roadmap = () => {
               <div className="timeline-number">
                 <h3>70%</h3>
               </div>
-              <h2>timeline item title</h2>
+              <h2>AlphaLioness Collection</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+                Launch of the second collection: The AlphaLioness, after the genesis collection.{" "}
+              </p>
+            </div>
+          </div>
+          <div className="timeline-item">
+            <div className="timeline-dot"></div>
+            <div className="timeline-percent">#8</div>
+            <div className="timeline-content">
+              <div className="timeline-number">
+                <h3>80%</h3>
+              </div>
+              <h2>Breeding</h2>
+              <p>
+                Each holder who has 1 lion and 1 lioness will get a unique baby lion.{" "}
+              </p>
+            </div>
+          </div>
+          <div className="timeline-item">
+            <div className="timeline-dot"></div>
+            <div className="timeline-percent">#9</div>
+            <div className="timeline-content">
+              <div className="timeline-number">
+                <h3>90%</h3>
+              </div>
+              <h2>Roadmap 2.0</h2>
+              <p>
+                Activation of the whole post mint Roadmap.{" "}
               </p>
             </div>
           </div>
         </div>
-        <div className="timeline-dot"></div>
+        {/* <div className="timeline-dot"></div> */}
       </section>
     </div>
   );

@@ -1,8 +1,9 @@
 import React, { useEffect, useRef } from "react";
-import Card from "./Card";
-import lion from "../assets/alien.png";
+import alpha1 from "../assets/TEAM_01.png";
+import alpha2 from "../assets/TEAM_02.png";
+import alpha3 from "../assets/TEAM_03.png";
+import alpha4 from "../assets/TEAM_04.png";
 import VanillaTilt from 'vanilla-tilt';
-import Grid from '@material-ui/core/Grid';
 
 export default function Team() {
 
@@ -17,55 +18,30 @@ export default function Team() {
     return <div ref={tilt} {...rest} />;
   }
 
-  const options = {
-    scale: 1.2,
-    speed: 800,
-    max: 10
-  };
   const data = [
     {
-      image: lion,
-      name: "Imad",
+      image: alpha1,
+      name: "Oxymore",
       role: "The Visionary",
     },
     {
-      image: lion,
-      name: "Shini",
+      image: alpha3,
+      name: "Spicy",
       role: "The Architect",
     },
     {
-      image: lion,
+      image: alpha2,
       name: "UltraPog",
       role: "The Artist",
     },
     {
-      image: lion,
+      image: alpha4,
       name: "Cesar",
       role: "The Mastermind",
     },
 
   ];
   return (
-
-
-    // <div className="team" id="team">
-    //   <div className="title-container">
-    //     <h2 className="title">MEET THE</h2>
-    //     <h2 className="title2">TEAM</h2>
-    //   </div>
-    //   <div className="cards">
-    //     {data.map(({ image, name, role }, index) => (
-    //       <Card
-    //         image={image}
-    //         series={name}
-    //         title={role}
-    //         key={index}
-    //       />
-    //     ))}
-    //   </div>
-    // </div>
-
-    //***************************************** */
     <div className="team" id="team">
       <div className="team-container">
         <div className="title-container">

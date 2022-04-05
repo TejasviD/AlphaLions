@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "./static/css/main.84b5e6ce.css",
+    "main.js": "./static/js/main.4e83c1f9.js",
+    "static/media/landing-video.mp4": "./static/media/landing-video.997ae5816be35bc88041.mp4",
+    "static/media/alpha-gif.gif": "./static/media/alpha-gif.370ea4cfab8ee5d1ea2c.gif",
+    "static/media/roadmap_gg.png": "./static/media/roadmap_gg.e695c18e1b97d7bd375b.png",
+    "static/media/community-bg.png": "./static/media/community-bg.e0a708198383455dd521.png",
+    "static/media/ALPHA_CYBORG_KING.png": "./static/media/ALPHA_CYBORG_KING.47f319bb37618b83beac.png",
+    "static/media/ALPHA_GUERILLA_KING.png": "./static/media/ALPHA_GUERILLA_KING.218e838b04a123dd60ac.png",
+    "static/media/ALPHA_SPARTAN_KING.png": "./static/media/ALPHA_SPARTAN_KING.7c7a4eb5c317577d938b.png",
+    "static/media/ALPHA_CYBORG_01.png": "./static/media/ALPHA_CYBORG_01.ddf6db9307baba175230.png",
+    "static/media/ALPHA_GUERILLA_01.png": "./static/media/ALPHA_GUERILLA_01.238216dcde954adc8932.png",
+    "static/media/alphalions-logo.png": "./static/media/alphalions-logo.e04fc54985587dd3b90c.png",
+    "static/media/ALPHA_SPARTAN_01.png": "./static/media/ALPHA_SPARTAN_01.7e96ddee77d8d1d9a056.png",
+    "static/media/ALPHA_SPARTAN_02.png": "./static/media/ALPHA_SPARTAN_02.e797499dfab119bc8e14.png",
+    "static/media/ALPHA_GUERILLA_02.png": "./static/media/ALPHA_GUERILLA_02.220af2eb135785d80479.png",
+    "static/media/TEAM_03.png": "./static/media/TEAM_03.05783fd88d2d3d4c1501.png",
+    "static/media/TEAM_04.png": "./static/media/TEAM_04.d62e0939b15b4749beb2.png",
+    "static/media/TEAM_01.png": "./static/media/TEAM_01.9232906a780317147e9d.png",
+    "static/media/TEAM_02.png": "./static/media/TEAM_02.aa3d5a8a0ea70c5aa3c6.png",
+    "static/media/slick.svg": "./static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "./static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/discord-icon.svg": "./static/media/discord-icon.d3b33a8132f346a51aa235f2e78069c5.svg",
+    "static/media/slick.ttf": "./static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "./static/media/slick.295183786cd8a1389865.woff",
+    "static/media/twitter-icon.svg": "./static/media/twitter-icon.a1251cc9c0dd4cddf81bdd2b382d6846.svg",
+    "index.html": "./index.html",
+    "main.84b5e6ce.css.map": "./static/css/main.84b5e6ce.css.map",
+    "main.4e83c1f9.js.map": "./static/js/main.4e83c1f9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.84b5e6ce.css",
+    "static/js/main.4e83c1f9.js"
+  ]
+}

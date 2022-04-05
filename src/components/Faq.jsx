@@ -25,7 +25,7 @@ export default function Faq() {
                         {data.map((item, i) => (
                             <div className="faq-block" key={item.id}>
                                 <div className="faq-top" onClick={() => toggle(i)}>
-                                    <h2 className="faq-title">
+                                    <h2 className="faq-title-wrapper">
                                         {item.question}
                                     </h2>
                                     <span>{selected === i ? '-' : '+'}</span>

@@ -7,22 +7,28 @@ export default function Story() {
             </h2>
             <div className="story-card">
                 <div className="story-content">
-                    <p>
-                        All Stars Club Bunny came out of his burrow and saw a Private Jet in the sky.
-                        Since then, he got so fascinated that he worked hard every single day to get his own one in the future.
-                        Later on, he moved to the City of Angels and he went all-in on cryptocurrencies. After some huge successes he quickly became a billionaire.
-                    </p>
-                    <br />
-                    <br />
-                    <p>
-                    In L.A. he lived all his dreams, from driving the finest cars, and wearing designer clothes to meeting the most attractive female bunnies
-                    and being surrounded by the most famous people. He even got his own Private Jet to travel around the world now!
-                    Therefore, he created All Stars Club so he can share his exceptional lifestyle with the young bunnies that have the same dream he had when
-                    they look at the All Stars Club's Private Jet today.
+                    <p className="story-text">
+                        The Alpha Lions are descendants of a great lineage of warriors.
+                        <br />
+                        <br />
+                        <br />
+                        Nearly 2000 years ago, the first Spartans were already fighting to feed themselves, hunt their enemies, and protect their land and their community.
+                        <br />
+                        The Alpha Lions were born to dominate, born to protect the world from all species and creatures that might threaten them.
+                        Throughout their existence, they have continued to evolve, to learn and to refine their fighting skills and abilities.
+                        <br />
+                        <br />
+                        In the year 2022, scientists received instructions from the future to build a time machine and assemble 500 of the best troops for a war planned for the year 2027.
+                        <br />
+                        <br />
+                        When the time machine was finally completed the Modern Lions and Cyborg Lions chose to go back in time to summon one of the most fearsome generations of the entire Alpha Lions bloodline... the Spartan Lions.
+                        <br />
+                        <br />
+                        <br />
+                        <span className="bottom-line">The three generations of Alpha Lions made a pact to fight all threats against humanity and conquer the unknown lands of the Metaverse.</span>
                     </p>
                 </div>
             </div>
-      </div>
+        </div>
     );
-  }
-  
+}

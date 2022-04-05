@@ -1,12 +1,30 @@
 .roadmap {
+    margin-top: 340px;
+    h2 {
+      margin-top: 20px;
+      margin-bottom: 30px;
+      font-size: 50px;
+      line-height: 40px;
+      font-weight: 700;
+      font-family: "Hanson", sans-serif;
+      text-shadow: 0 0 12px rgb(217 216 218 / 80%);
+      color: #fff;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+    }
     .timeline-section {
       //background-color: #0000;
-      background: url(/assets/roadmap_gg.png);
-      background-position: bottom;
+      background: url(/assets/background_gg.jpg);
+      //background-position: bottom;
+      background-position: center;
       //background-size: cover;
-      //background-repeat: no-repeat;
+      background-size: contain;
+      background-repeat: no-repeat;
       min-height: 100vh;
-      padding: 100px 15px;
+      //padding: 100px 15px;
+      padding: 100px 0px;
+      
     }
     .timeline-items {
       max-width: 1000px;
@@ -86,7 +104,7 @@
       border-top: 1px solid rgba(255, 255, 255, 0.5);
       border-left: 1px solid rgba(255, 255, 255, 0.5);
       backdrop-filter: blur(5px);
-      min-height: 500px;
+      min-height: 325px;
     }
     .timeline-content h2 {
       font-size: 25px;
@@ -109,6 +127,7 @@
       font-weight: 300;
       line-height: 22px;
       font-weight: 500;
+      margin-top: 15px;
     }
   
     /* responsive */

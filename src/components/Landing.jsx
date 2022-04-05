@@ -1,5 +1,5 @@
 import React from "react";
-import vid from "../assets/Gearup.64cfece3.mp4";
+import vid from "../assets/landing-video.mp4";
 
 export default function Landing() {
     return (

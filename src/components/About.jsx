@@ -1,7 +1,6 @@
 import React from "react";
 import TypeAnimation from 'react-type-animation';
-import gif from "../assets/about_gif.gif";
-import liongif from "../assets/lion-legends.gif";
+import liongif from "../assets/alpha-gif.gif";
 import { BsTwitter } from "react-icons/bs";
 
 export default function About() {
@@ -42,7 +41,7 @@ export default function About() {
                                     Join our growing community united by the same dreams and get access to incredible benefits and services.
                                 </p>
                                 <div className="twitter-link">
-                                    <a href="https://discord.com/invite/alpha" target="_blank" className="join-twitter">Follow on twitter <span><BsTwitter /></span></a>
+                                    <a href="https://twitter.com/AlphaLions04" target="_blank" className="join-twitter">Follow on twitter <span><BsTwitter /></span></a>
                                 </div>
 
                             </div>

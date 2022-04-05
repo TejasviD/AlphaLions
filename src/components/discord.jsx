@@ -4,7 +4,7 @@ import discord from "../assets/discord.png";
 
 export default function discordInvite() {
     return (
-        <a href="#" className="discordLogo-wrapper">
+        <a target="_blank" href="https://discord.com/invite/z8hyV7eXya" className="discordLogo-wrapper">
             <div className="discordLogo">
                 <img className="discordImg" src={discord} alt="discordLogo" />
             </div>

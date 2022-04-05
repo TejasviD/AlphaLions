@@ -15,10 +15,8 @@ export default function JoinCommunity() {
                 repeat={Infinity}
               />
             </h1>
-
-            {/* <h1 className="title">JOIN THE COMMUNITY!</h1> */}
             <p className="description">Ready to be an Alpha? Join us on Discord and be part of this adventure.</p>
-            <a href="https://discord.com/invite/alpha" target="_blank" className="join-discord"> Join Discord </a>
+            <a href="https://discord.com/invite/z8hyV7eXya" target="_blank" className="join-discord"> Join Discord </a>
           </div>
         </div>
 

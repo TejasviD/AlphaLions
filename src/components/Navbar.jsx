@@ -5,7 +5,7 @@ import { ImSun } from "react-icons/im";
 import { BsFillMoonFill } from "react-icons/bs";
 import discord from "../assets/discord-icon.svg";
 import twitter from "../assets/twitter-icon.svg";
-//import logo from "../assets/logo.png";
+import medium from "../assets/medium-icon.png";
 import alpha from "../assets/alphalions-logo.png";
 export default function Navbar({ changeTheme, currentTheme }) {
   const [navState, setNavState] = useState(false);
@@ -26,13 +26,18 @@ export default function Navbar({ changeTheme, currentTheme }) {
           <div className="social-media-container-1">
             <ul className="social-links-1">
               <li>
-                <a className="header-icon-1" href="#features">
-                  <img className="social-icon-1" src={discord} alt="" />
+                <a className="header-icon-1" target="_blank" href="https://discord.com/invite/z8hyV7eXya">
+                  <img className="social-icon-1" src={discord} alt="discord" />
                 </a>
               </li>
               <li>
-                <a className="header-icon-1" href="#features">
-                  <img className="social-icon-1" src={twitter} alt="" />
+                <a className="header-icon-1" target="_blank" href="https://twitter.com/AlphaLions04">
+                  <img className="social-icon-1" src={twitter} alt="twitter" />
+                </a>
+              </li>
+              <li>
+                <a className="header-icon-1" target="_blank" href="https://twitter.com/AlphaLions04">
+                  <img className="social-icon-1" src={medium} alt="medium" />
                 </a>
               </li>
             </ul>
@@ -68,13 +73,18 @@ export default function Navbar({ changeTheme, currentTheme }) {
       <div className="social-media-container">
         <ul className="social-links">
           <li>
-            <a className="header-icon" href="#features">
+            <a className="header-icon" target="_blank" href="https://discord.com/invite/z8hyV7eXya">
               <img className="social-icon" src={discord} alt="" />
             </a>
           </li>
           <li>
-            <a className="header-icon" href="#features">
+            <a className="header-icon" target="_blank" href="https://twitter.com/AlphaLions04">
               <img className="social-icon" src={twitter} alt="" />
+            </a>
+          </li>
+          <li>
+            <a className="header-icon" target="_blank" href="https://medium.com/alphalions/roadmap-63c3935f1a26">
+              <img className="social-icon medium" src={medium} alt="" />
             </a>
           </li>
         </ul>

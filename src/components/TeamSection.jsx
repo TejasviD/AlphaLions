@@ -9,25 +9,21 @@ const data = [
     {
       image: super1,
       name: "card",
-      //name: "Imad",
       role: "The visionary",
     },
     {
       image: super2,
       name: "card",
-      //name: "Shini",
       role: "The Architect",
     },
     {
       image: super3,
       name: "card",
-      //name: "UltraPog",
       role: "The Artist",
     },
     {
       image: super4,
       name: "card",
-      //name: "Mexican",
       role: "The Architect",
     },
 

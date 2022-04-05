@@ -1,57 +1,148 @@
 import React from "react";
-import logo from "../assets/logo.png";
-import { BsFacebook, BsTwitter, BsInstagram, BsDiscord } from "react-icons/bs";
-import { FaTiktok } from "react-icons/fa";
-export default function Footer() {
-  const links = [
-    {
-      data: ["About", "Terms", "Legal"],
-    },
-    {
-      data: ["OpenSea", "Maker", "Learn"],
-    },
-    {
-      data: ["Press", "Support"],
-    },
-    {
-      title: "Social",
-      data: ["Twiiter", "Instagram"],
-    },
-  ];
-  const socialLink = [
-    <BsDiscord />,
-    <BsTwitter />,
-    <BsInstagram />,
-  ];
-  return (
-    <footer>
-      <div className="footer-container">
-        <div className="upper" id="footer">
-          <div className="brand-container">
-            <ul>
-              <li>
-                <a href="https://discord.gg/7cUbfKMY" className="icon-link" target="_blank"><BsDiscord /></a>
-              </li>
-              <li>
-                <a href="https://discord.gg/7cUbfKMY" className="icon-link" target="_blank"><BsTwitter /></a>
-              </li>
-              <li>
-                <a href="https://discord.gg/7cUbfKMY" className="icon-link" target="_blank"><BsInstagram /></a>
-              </li>
-            </ul>
-            <div className="brand">
-              <img src={logo} alt="logo" />
-            </div>
-            <p>Terms &amp; Conditions</p>
-          </div>
-          <div className="links">
-          </div>
-        </div>
-        <div className="lower">
-          <span>&copy; Copyright 2022 Alpha Lions. All Rights Reserved.</span>
-        </div>
-      </div>
+import logo from "../assets/logo-footer.png";
+import {BsTwitter, BsDiscord, BsMedium } from "react-icons/bs";
+import TermsAndConditions from "../components/TermsAndConditions";
+import { Modal } from "react-responsive-modal";
 
-    </footer>
-  );
+export default class Footer extends React.Component {
+
+  state = {
+    open: false
+  };
+
+  onOpenModal = () => {
+    this.setState({ open: true });
+  };
+
+  onCloseModal = () => {
+    this.setState({ open: false });
+  };
+  render() {
+    const { open } = this.state;
+    const modaltitle = {
+      fontFamily: "'Hanson', sans-serif",
+      color: "#fff",
+      fontSize: "35px",
+      fontWeight: "400",
+      letterSpacing: "1px",
+      textTransform: "uppercase",
+      position: "relative",
+      marginBottom: "35px",
+      marginTop: "35px",
+      textShadow: "0 0 12px rgb(217 216 218 / 80%)",
+      alignItems: "center",
+      display: "flex",
+      justifyContent: "center"
+    };
+    const modalContent = {
+      fontFamily: "'Hanson', sans-serif",
+      color: "#fff",
+      fontSize: "15px",
+      letterSpacing: "-0.2px"
+    };
+    const closeIcon = (
+      <svg fill="#FFFFFF" width="28" height="28" viewBox="0 0 36 36" data-testid="close-icon">
+        <path d="M28.5 9.62L26.38 7.5 18 15.88 9.62 7.5 7.5 9.62 15.88 18 7.5 26.38l2.12 2.12L18 20.12l8.38 8.38 2.12-2.12L20.12 18z"></path>
+      </svg>
+    );
+    return (
+      <footer>
+        <div className="footer-container">
+          <div className="upper" id="footer">
+            <div className="brand-container">
+              <ul>
+                <li>
+                  <a href="https://discord.com/invite/z8hyV7eXya" className="icon-link" target="_blank"><BsDiscord /></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/AlphaLions04" className="icon-link" target="_blank"><BsTwitter /></a>
+                </li>
+                <li>
+                  <a href="https://discord.gg/7cUbfKMY" className="icon-link" target="_blank"><BsMedium /></a>
+                </li>
+              </ul>
+              <div className="brand">
+                <img src={logo} alt="logo" />
+              </div>
+              <button
+                onClick={this.onOpenModal} >
+                Terms &amp; Conditions
+              </button>
+              <Modal open={open} closeIcon={closeIcon} onClose={this.onCloseModal} classNames={{
+                      overlay: 'customOverlay',
+                      modal: 'customModal',
+                      
+                    }}>
+                <h2 className="modal-title" style={modaltitle}>TERMS &amp; CONDITIONS</h2>
+                <p className="modal-content" style={modalContent}>
+                  {/* This website belongs to Alpha Lions, the terms “Alpha Lions”, “we”, “us” or “our”, depending on the context, refers to Alpha Lions.
+                  <br />
+                  <br /> */}
+                  Alpha Lions is a collection of digital artworks or also called NFTs running on the Crypto network.
+                  This website is only an interface allowing participants to exchange digital collectibles.
+                  Buyers of those same NFTs are entirely responsible for the safety and management of their own private wallets and validating all transactions and contracts generated by this website before approval.
+                  Since the Alien Lions smart contract runs on the Crypto network, there is no ability to undo, reverse, or restore any transactions.
+                  <br />
+                  <br />
+                  This website and its connected services are provided “as is” and “as available” without warranty of any kind.
+                  By using this website you are accepting sole responsibility for any and all transactions involving Alpha Lions digital collectibles.
+                  <br />
+                  <br />
+                  <br />
+                  i) Visiting any website where our products resell (NFT marketplace) you also agree to their terms and conditions.
+                  <br />
+                  <br />
+                  ii) The user/ buyer confirms that he fully understands the NFT markets including the risks of it, expenses and fees (also called gas fees).
+                  The user acknowledged the risk of using and interacting with a smart contract, and the risks of buying and holding an NFT, this includes ( but not limited to ) the risk of losing the access to the NFT 
+                  in case of the loss of the wallet key, custodial error or purchaser error, risk of mining or blockchain attacks, 
+                  risk of hacking and security weaknesses, risk of unfavorable regulatory intervention in one or more jurisdictions, 
+                  risks related to token taxation, risk of personal information disclosure, risk of uninsured losses, unanticipated risks, and volatility risks.
+                  <br />
+                  <br />
+                  iii) OWNERSHIP
+                    <br />
+                    Each Lion is an NFT on the Cryto blockchain. When you purchase an NFT, you own the underlying Lion, the Art, completely.
+                    Ownership of the NFT is mediated entirely by the Smart Contract and the Ethereum Network: at no point may we seize, freeze, or otherwise modify the ownership of any Lion.
+                    This ownership of the Alpha Lions NFT is for and only for the NFT that you purchased though the minting process (interaction with the smart contract).
+                    <br />
+                    i. PERSONAL USE
+                    <br />
+                    This ownership allows use, copy and display of the Alpha Lions NFT that you possess and for any derivative artwork or extensions that you could create or use, limited by the following usage:
+                    i) Through any marketplace that allow the purchase and selling of Alpha Lions NFT as long as the same marketplace verify that you are the sole owner of the NFT.
+                    ii) Personal use (for commercial use check the next section of the terms and conditions) This ownership license applies only to the extent that the NFT owner still own the NFT which the ownership refers to.
+                    <br />
+                    The license provided to you through the above terms only applies to the extent that you continue to own the NFT previously bought, 
+                    if you decide to sell trade exchange giveaway donate or dispose in your NFT in any other way and for any reason, the granted license will at the same moment expire 
+                    and you will have no right regarding the artwork or the NFT.
+                    <br />
+                    <br />
+                    ii. COMMERCIAL USE
+                    <br />
+                    Actual owner of an Alpha Lions NFT grants you an unlimited, worldwide license to use, copy, and display the purchased Art 
+                    for the purpose of creating derivative works based upon the Art (“Commercial Use”). 
+                    Examples of such Commercial Use would e.g. be the use of the Art to produce and sell merchandise products (T-Shirts, hoodies etc.) displaying copies of the Art. 
+                    For clarity, nothing in this Section will be deemed to restrict you from:
+                    <br />
+                    (i) owning or operating a marketplace that permits the use and sale of Lion generally, 
+                    provided that the marketplace cryptographically verifies each Lion owner’s rights to display the Art for their Lion to ensure that only the actual owner can display the Art;
+                    <br /> 
+                    (ii) owning or operating a third party website or application that permits the inclusion, involvement, or participation of Lion generally, 
+                    provided that the third party website or application cryptographically verifies each Lion owner’s rights to display the Art for their Lion to ensure that 
+                    only the actual owner can display the Art, and provided that the Art is no longer visible once the owner of the Purchased Lion leaves the website/application; or 
+                    <br />
+                    (iii) earning revenue from any of the foregoing.
+                </p>
+              </Modal>
+            </div>
+            <div className="links">
+            </div>
+          </div>
+          <div className="lower">
+            <span>&copy; Copyright 2022 Alpha Lions. All Rights Reserved.</span>
+          </div>
+        </div>
+
+      </footer>
+    );
+  }
 }

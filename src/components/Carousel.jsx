@@ -1,11 +1,12 @@
 import React, { Component } from "react";
-import alien from "../assets/alien.png";
-import alien1 from "../assets/alien1.png";
-import alien2 from "../assets/alien2.png";
-import alien3 from "../assets/alien3.png";
-import alien4 from "../assets/Alien4.png";
-import alien5 from "../assets/alien5.png";
-import teamImg from "../assets/teamImg.png";
+import alpha1 from "../assets/ALPHA_CYBORG_01.png";
+import alpha2 from "../assets/ALPHA_GUERILLA_02.png";
+import alpha3 from "../assets/ALPHA_SPARTAN_01.png";
+import alpha4 from "../assets/ALPHA_CYBORG_KING.png";
+import alpha5 from "../assets/ALPHA_GUERILLA_KING.png";
+import alpha6 from "../assets/ALPHA_SPARTAN_02.png";
+import alpha7 from "../assets/ALPHA_SPARTAN_KING.png";
+import alpha8 from "../assets/ALPHA_GUERILLA_01.png";
 //import alien4 from "../assets/alien4.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -107,14 +108,14 @@ export default class Carousel extends Component {
 
                 </div>
                 <Slider {...settings}>
-                    <img className="carousel-img" src={alien} alt="" />
-                    <img className="carousel-img" src={alien1} alt="" />
-                    <img className="carousel-img" src={alien2} alt="" />
-                    <img className="carousel-img" src={alien3} alt="" />
-                    <img className="carousel-img" src={alien4} alt="" />
-                    <img className="carousel-img" src={alien5} alt="" />
-                    <img className="carousel-img img-7" src={alien2} alt="" />
-                    <img className="carousel-img img-8" src={alien3} alt="" />
+                    <img className="carousel-img" src={alpha1} alt="alphalion" />
+                    <img className="carousel-img" src={alpha2} alt="alphalion" />
+                    <img className="carousel-img" src={alpha3} alt="alphalion" />
+                    <img className="carousel-img" src={alpha4} alt="alphalion" />
+                    <img className="carousel-img" src={alpha5} alt="alphalion" />
+                    <img className="carousel-img" src={alpha6} alt="alphalion" />
+                    <img className="carousel-img img-7" src={alpha7} alt="alphalion" />
+                    <img className="carousel-img img-8" src={alpha8} alt="alphalion" />
                 </Slider>
                 </div>
             </div>

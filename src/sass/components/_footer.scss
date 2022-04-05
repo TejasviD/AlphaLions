@@ -7,13 +7,10 @@ footer {
   }
   
   .footer-container{
-    margin: 6rem 0 0rem 0;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    border-top: 1px solid hsla(0, 0%, 94.5%, 0.1);
-    //To review with le barbu toujours énervé Imad
-    //border-top: 1px solid rgb(241, 241, 241);
+    //border-top: 1px solid hsla(0, 0%, 94.5%, 0.1);
     padding-top: 40px;
     .upper {
       display: flex;
@@ -28,17 +25,20 @@ footer {
         gap: 1.5rem;
         .brand {
           img {
+            max-width: 100%;
           }
         }
-        p {
+        button {
           color: hsla(0, 0%, 94.5%, 0.25);
           font-size: 15px;
           line-height: 1.24em;
           text-align: center;
           letter-spacing: -0.04em;
           text-decoration: underline;
+          background-color: black;
+          border: none;
         }
-        p:hover{
+        button:hover{
           text-shadow: 0 0 12px rgb(217 216 218 / 80%);
         }
         ul {
@@ -92,8 +92,43 @@ footer {
       }
     }
   }
+
+  .customModal{
+    background-color: black !important;
+    background: black !important;
+    box-shadow: 0 32px 250px 0 rgb(37 177 144 / 50%) !important;
+  }
+  
+  .react-responsive-modal-root{
+    .react-responsive-modal-overlay{
+      .react-responsive-modal-container{
+        .react-responsive-modal-modal{
+          background-color: black !important;
+          background: black !important;
+        }
+
+      }
+
+    }
+
+  }
+  
   
 }
+ 
+.customModal{
+  background-color: #000;
+  background: #000;
+  box-shadow: 0 32px 250px 0 rgb(255 255 255 / 50%) !important;
+  border-radius: 10px;
+}
+
+.iconClose:hover{
+  box-shadow: 0 0 12px rgb(217 216 218 / 80%),
+}
+
+
+
 
 [data-theme="light"] {
   footer {
