@@ -36,7 +36,7 @@ export default function Navbar({ changeTheme, currentTheme }) {
                 </a>
               </li>
               <li>
-                <a className="header-icon-1" target="_blank" href="https://twitter.com/AlphaLions04">
+                <a className="header-icon-1" target="_blank" href="https://medium.com/alphalions/roadmap-63c3935f1a26">
                   <img className="social-icon-1" src={medium} alt="medium" />
                 </a>
               </li>

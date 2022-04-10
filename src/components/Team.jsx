@@ -37,7 +37,7 @@ export default function Team() {
     {
       image: alpha4,
       name: "Cesar",
-      role: "The Mastermind",
+      role: "The marketing strategist",
     },
 
   ];

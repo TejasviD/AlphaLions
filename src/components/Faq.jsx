@@ -1,4 +1,5 @@
 import { useState } from "react";
+import DiscordLink from "./DiscordLink";
 
 export default function Faq() {
 
@@ -44,6 +45,7 @@ export default function Faq() {
 
     );
 }
+const link = <a className="header-icon-1" target="_blank" href="https://discord.com/invite/z8hyV7eXya">Discord</a>
 
 const data = [
     {
@@ -54,42 +56,42 @@ const data = [
     {
         id: "1",
         question: 'WHAT IS ALPHA LIONS?',
-        answer: 'Metamask is a crypto wallet that can store your Ethereum. You need it to be able to buy an Alpha Lions NFT.'
+        answer: 'AlphaLions is an NFT collection of 1500 NFTs per faction based on the Crypto Blockchain. By owing an AlphaLion NFT, you will get access to several benefits.'
     },
     {
         id: "2",
         question: 'HOW MANY LIONS WILL BE AVAILABLE?',
-        answer: 'Metamask is a crypto wallet that can store your Ethereum. You need it to be able to buy an Alpha Lions NFT.'
+        answer: '1500 AlphaLions NFTs will be available per faction.'
     },
     {
         id: "3",
         question: 'WHICH BLOCKCHAIN WILL THE LIONS BE MINTED ON?',
-        answer: 'Metamask is a crypto wallet that can store your Ethereum. You need it to be able to buy an Alpha Lions NFT.'
+        answer: 'All AlphaLions Nfts will be minted on the Crypto Blockchain (#cros).'
     },
     {
         id: "4",
         question: 'IS THERE A WHITELIST?',
-        answer: 'Yes check the requirements on the Discord.' + 'Yes check the requirements on the Discord.'
+        answer: `Yes, check the requirements on the Discord.`
     },
     {
         id: "5",
         question: 'WILL THERE BE A PRE-SALE?',
-        answer: 'Yes check the requirements on the Discord.' + 'Yes check the requirements on the Discord.'
+        answer: "Yes, check all the information on the Discord."
     },
     {
         id: "6",
         question: 'WHEN WILL THE PUBLIC SALE GO LIVE?',
-        answer: 'Yes check the requirements on the Discord.' + 'Yes check the requirements on the Discord.'
+        answer: 'All information relating to the public sale will be announced on the Discord and Twitter soon.'
     },
     {
         id: "7",
         question: 'HOW TO MINT AN ALPHA LIONS NFT?',
-        answer: 'Yes check the requirements on the Discord.' + 'Yes check the requirements on the Discord.'
+        answer: 'You will need a Metamask wallet or a Wallet Connect compatible wallet.'
     },
     {
         id: "8",
         question: 'WHERE CAN I SEE MY NFT AFTER MINTED?',
-        answer: 'Yes check the requirements on the Discord.' + 'Yes check the requirements on the Discord.'
+        answer: 'Once you have successfully minted your AlphaLions NFT, you can visualize it in your wallet on OpenSea.'
     }
 
 ]

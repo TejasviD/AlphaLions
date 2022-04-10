@@ -33,8 +33,8 @@ export default function About() {
                         <div className="about-content-wrap">
                             <div className="about-card">
                                 <p className="about-description">
-                                    Alpha Lions is a collection of 7,777 unique NFTs built with a sophisticated variety of distinctive traits on the crypto blockchain.
-                                    With over 150 hand-drawn features, each NFT is unique.
+                                    Alpha Lions is a collection of 1500 NFTs per faction built with a sophisticated variety of distinctive traits on the crypto blockchain.
+                                    With over 100 hand-drawn features, each NFT is unique.
                                 </p>
                                 <p className="about-desc">You dreamt of it, we made it for you!</p>
                                 <p>
