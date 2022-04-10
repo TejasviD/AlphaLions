@@ -58,7 +58,7 @@ export default class Footer extends React.Component {
                   <a href="https://twitter.com/AlphaLions04" className="icon-link" target="_blank"><BsTwitter /></a>
                 </li>
                 <li>
-                  <a href="https://discord.gg/7cUbfKMY" className="icon-link" target="_blank"><BsMedium /></a>
+                  <a href="https://medium.com/alphalions/roadmap-63c3935f1a26" className="icon-link" target="_blank"><BsMedium /></a>
                 </li>
               </ul>
               <div className="brand">
