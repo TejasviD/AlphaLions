@@ -48,7 +48,7 @@ export default function App() {
   return shouldUseImage ? (
     <img src={vid} alt="Muted Video" />
   ) : (
-    <div
+    <div className="container"
       ref={videoParentRef}
       dangerouslySetInnerHTML={{
         __html: `
