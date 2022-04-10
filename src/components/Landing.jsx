@@ -5,7 +5,7 @@ export default function Landing() {
     return (
       <div className="landing">
         <div className="container">
-            <video className="video" src={vid} loop="loop" autoPlay="autoPlay" muted="muted"></video>
+            <video className="video" src={vid} loop="loop" autoPlay="autoPlay" muted="muted" type="video/mp4"></video>
         </div>
       </div>
     );

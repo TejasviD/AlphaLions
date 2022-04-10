@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Footer from "./components/Footer";
 import Landing from "./components/Landing";
+import Video from "./components/Video";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Story from "./components/Story";
@@ -57,7 +58,8 @@ function App() {
     <div data-theme={theme}  className="app-container">
       <Discord />
       <Navbar changeTheme={changeTheme} currentTheme={theme}/>
-      <Landing />
+      {/* <Landing /> */}
+      <Video />
       <About />
       <Story />
       <Carousel />

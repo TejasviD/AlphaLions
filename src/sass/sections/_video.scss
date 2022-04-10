@@ -1,0 +1,13 @@
+.landing{
+    height: 100vh;
+    position: relative;
+    .container{
+        .video{
+            width: 100vw;
+            height: 100vh;
+            -o-object-fit: cover;
+            object-fit: cover;
+            background: #161616;
+        }
+    }
+}
