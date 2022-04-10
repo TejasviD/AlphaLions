@@ -71,7 +71,7 @@ const data = [
     {
         id: "4",
         question: 'IS THERE A WHITELIST?',
-        answer: `Yes, check the requirements on the .`
+        answer: `Yes, check the requirements on the Discord.`
     },
     {
         id: "5",
