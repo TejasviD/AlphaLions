@@ -56,6 +56,7 @@ const Roadmap = () => {
     <div className="roadmap" id="roadmap">
       <h2>ROADMAP</h2>
       <section className="timeline-section" id="timeline">
+        <div className="timeline-wrap">
         <div className="timeline-progress" style={progressBarStyle}></div>
         <div className="timeline-items">
           <div ref={setRefs} className="timeline-indicator"></div>
@@ -184,6 +185,7 @@ const Roadmap = () => {
               </p>
             </div>
           </div>
+        </div>
         </div>
         {/* <div className="timeline-dot"></div> */}
       </section>
