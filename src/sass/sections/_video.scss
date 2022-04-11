@@ -8,6 +8,7 @@
             -o-object-fit: cover;
             object-fit: cover;
             background: #161616;
+            -webkit-user-select: none;
         }
     }
 }
@@ -19,5 +20,6 @@
         -o-object-fit: cover;
         object-fit: cover;
         background: #161616;
+        -webkit-user-select: none;
     }
 }
