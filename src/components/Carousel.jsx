@@ -108,14 +108,14 @@ export default class Carousel extends Component {
 
                 </div>
                 <Slider {...settings}>
-                    <img className="carousel-img" src={alpha1} alt="alphalion" />
-                    <img className="carousel-img" src={alpha2} alt="alphalion" />
-                    <img className="carousel-img" src={alpha3} alt="alphalion" />
-                    <img className="carousel-img" src={alpha4} alt="alphalion" />
-                    <img className="carousel-img" src={alpha5} alt="alphalion" />
-                    <img className="carousel-img" src={alpha6} alt="alphalion" />
-                    <img className="carousel-img img-7" src={alpha7} alt="alphalion" />
-                    <img className="carousel-img img-8" src={alpha8} alt="alphalion" />
+                    <img className="carousel-img" src={alpha1} alt="alphalions" />
+                    <img className="carousel-img" src={alpha2} alt="alphalions" />
+                    <img className="carousel-img" src={alpha3} alt="alphalions" />
+                    <img className="carousel-img" src={alpha4} alt="alphalions" />
+                    <img className="carousel-img" src={alpha5} alt="alphalions" />
+                    <img className="carousel-img" src={alpha6} alt="alphalions" />
+                    <img className="carousel-img img-7" src={alpha7} alt="alphalions" />
+                    <img className="carousel-img img-8" src={alpha8} alt="alphalions" />
                 </Slider>
                 </div>
             </div>

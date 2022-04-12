@@ -51,7 +51,7 @@ export default function Team() {
           {data.map(({ image, name, role }, index) => (
             <div className="team-card" key={index}>
               <Tilt className="card-image" >
-                <img className="team-image" src={image} alt="lion" />
+                <img className="team-image" src={image} alt="alphalions" />
               </Tilt>
               <div className="team-info">
                 <h3 className="card-series" >{name}</h3>

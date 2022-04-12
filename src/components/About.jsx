@@ -49,7 +49,7 @@ export default function About() {
                         </div>
                         <div className="about-content-wrap">
                             <div className="about-gif">
-                                <img src={liongif} alt="" />
+                                <img src={liongif} alt="alphalions" />
                             </div>
                         </div>
                     </div>

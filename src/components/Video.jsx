@@ -46,7 +46,7 @@ export default function App() {
   }, []);
 
   return shouldUseImage ? (
-    <img src={vid} alt="Muted Video" />
+    <img src={vid} alt="alphalions" />
   ) : (
     <div className="container"
       ref={videoParentRef}

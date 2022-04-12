@@ -5,7 +5,7 @@ export default function Card({ image, series, title }) {
     <div className="team-card">
       <div className="card-team">
       <Tilt className="card-image">
-        <img src={image} alt="super1" />
+        <img src={image} alt="alphalions" />
       </Tilt>
       <div className="card-content">
         <div className="card-heading">

@@ -74,17 +74,17 @@ export default function Navbar({ changeTheme, currentTheme }) {
         <ul className="social-links">
           <li>
             <a className="header-icon" target="_blank" href="https://discord.com/invite/z8hyV7eXya">
-              <img className="social-icon" src={discord} alt="" />
+              <img className="social-icon" src={discord} alt="discord" />
             </a>
           </li>
           <li>
             <a className="header-icon" target="_blank" href="https://twitter.com/AlphaLions04">
-              <img className="social-icon" src={twitter} alt="" />
+              <img className="social-icon" src={twitter} alt="twitter" />
             </a>
           </li>
           <li>
             <a className="header-icon" target="_blank" href="https://medium.com/alphalions/roadmap-63c3935f1a26">
-              <img className="social-icon medium" src={medium} alt="" />
+              <img className="social-icon medium" src={medium} alt="medium" />
             </a>
           </li>
         </ul>
