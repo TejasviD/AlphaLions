@@ -56,17 +56,17 @@ const data = [
     {
         id: "1",
         question: 'WHAT IS ALPHA LIONS?',
-        answer: 'AlphaLions is an NFT collection of 1500 NFTs per faction based on the Crypto Blockchain. By owing an AlphaLion NFT, you will get access to several benefits.'
+        answer: 'AlphaLions is an NFT collection of 1500 NFTs per faction based on the Crypto Blockchain. By owning an AlphaLion NFT, you will get access to several benefits.'
     },
     {
         id: "2",
         question: 'HOW MANY LIONS WILL BE AVAILABLE?',
-        answer: '1500 AlphaLions NFTs will be available per faction.'
+        answer: '500 AlphaLions NFTs will be available per faction.'
     },
     {
         id: "3",
         question: 'WHICH BLOCKCHAIN WILL THE LIONS BE MINTED ON?',
-        answer: 'All AlphaLions Nfts will be minted on the Crypto Blockchain (#Cronos).'
+        answer: 'All AlphaLions NFTs will be minted on the Crypto Blockchain (#Cronos).'
     },
     {
         id: "4",
