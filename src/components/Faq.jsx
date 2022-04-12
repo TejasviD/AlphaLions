@@ -66,7 +66,7 @@ const data = [
     {
         id: "3",
         question: 'WHICH BLOCKCHAIN WILL THE LIONS BE MINTED ON?',
-        answer: 'All AlphaLions Nfts will be minted on the Crypto Blockchain (#cros).'
+        answer: 'All AlphaLions Nfts will be minted on the Crypto Blockchain (#Cronos).'
     },
     {
         id: "4",

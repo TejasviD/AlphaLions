@@ -113,7 +113,7 @@ const Roadmap = () => {
               </div>
               <h2>Mint of AlphaLions NFTS</h2>
               <p>
-                1,500 AlphaLions NFTs  will be available on #cronos and once sell out, they will be available on secondary markets ( Ebisus’Bay ).{" "}
+                1,500 AlphaLions NFTs  will be available on #Cronos and once sold out, they will be available on secondary markets ( EbisusBay ).{" "}
               </p>
             </div>
           </div>
