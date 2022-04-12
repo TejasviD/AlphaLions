@@ -13,7 +13,8 @@ import Roadmap from "./components/Roadmap";
 import Team from "./components/Team";
 import JoinCommunity from "./components/JoinCommunity";
 import scrollreveal from "scrollreveal";
-import ReactDOM from 'react-dom';  
+import ReactDOM from 'react-dom';
+import { SmoothProvider } from 'react-smooth-scrolling'
 import "./sass/index.scss";
 function App() {
   const [theme, setTheme] = useState("dark");
@@ -27,6 +28,7 @@ function App() {
         distance: "80px",
         duration: 2000,
         reset: false,
+        smooth: true,
       });
       sr.reveal(
         `
@@ -55,9 +57,9 @@ function App() {
     nav[0].style.transform = "none";
   }, 1500);
   return (
-    <div data-theme={theme}  className="app-container">
+    <div data-theme={theme} className="app-container">
       <Discord />
-      <Navbar changeTheme={changeTheme} currentTheme={theme}/>
+      <Navbar changeTheme={changeTheme} currentTheme={theme} />
       {/* <Landing /> */}
       <Video />
       <About />
@@ -68,7 +70,7 @@ function App() {
       <Faq />
       <JoinCommunity />
       <Footer />
-    </div>
+    </div >
   );
 }
 
