@@ -100,8 +100,8 @@ export default class Carousel extends Component {
                             <br />
                             <br />
                             <p>
-                            By joining the Alpha Lions, you have the unique opportunity to meet your favorite artists and celebrities in this new and unique way.
-                            Get access to the most iconic exclusive club granting you access to concerts, luxury yacht trips and others idylllic events, on earth and in the Metaverse.
+                            By joining Alpha Lions, you will be part of a growing community united by the same dreams towards the revolution.
+                            Minting one Alpha Lions NFT will get you access to the exclusive benefits thoroughly detailed in the roadmap.
                             </p>
                         </div>
                     </div>

@@ -91,7 +91,7 @@ const data = [
     {
         id: "8",
         question: 'WHERE CAN I SEE MY NFT AFTER MINTED?',
-        answer: 'Once you have successfully minted your AlphaLions NFT, you can visualize it in your wallet on OpenSea.'
+        answer: 'Once you have successfully minted your AlphaLions NFT, you can visualize it in your wallet on EbisusBay.'
     }
 
 ]
