@@ -21,35 +21,35 @@ function App() {
   const changeTheme = () => {
     theme === "dark" ? setTheme("light") : setTheme("dark");
   };
-  useEffect(() => {
-    const registerAnimations = () => {
-      const sr = scrollreveal({
-        origin: "bottom",
-        distance: "80px",
-        duration: 2000,
-        reset: false,
-        smooth: true,
-      });
-      sr.reveal(
-        `
-        nav,
-        .home,
-        .about,
-        .story,
-        .carousel,
-        .roadmap
-        .team,
-        .faq,
-        .community,
-        footer
-    `,
-        {
-          interval: 500,
-        }
-      );
-    };
-    registerAnimations();
-  }, []);
+  // useEffect(() => {
+  //   const registerAnimations = () => {
+  //     const sr = scrollreveal({
+  //       origin: "bottom",
+  //       distance: "80px",
+  //       duration: 2000,
+  //       reset: false,
+  //       smooth: true,
+  //     });
+  //     sr.reveal(
+  //       `
+  //       nav,
+  //       .home,
+  //       .about,
+  //       .story,
+  //       .carousel,
+  //       .roadmap
+  //       .team,
+  //       .faq,
+  //       .community,
+  //       footer
+  //   `,
+  //       {
+  //         interval: 500,
+  //       }
+  //     );
+  //   };
+  //   registerAnimations();
+  // }, []);
   window.setTimeout(() => {
     // const home = document.getElementsByClassName("home");
     // home[0].style.transform = "none";
