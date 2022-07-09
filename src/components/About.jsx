@@ -41,7 +41,7 @@ export default function About() {
                                     Join our growing community united by the same dreams and get access to incredible benefits and services.
                                 </p>
                                 <div className="twitter-link">
-                                    <a href="https://twitter.com/AlphaLions04" target="_blank" className="join-twitter">Follow on twitter <span><BsTwitter /></span></a>
+                                    <a href="https://twitter.com/CroAlphaLions" target="_blank" className="join-twitter">Follow on twitter <span><BsTwitter /></span></a>
                                 </div>
 
                             </div>

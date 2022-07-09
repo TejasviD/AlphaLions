@@ -10,6 +10,7 @@ import Discord from "./components/discord";
 import Faq from "./components/Faq";
 import Carousel from "./components/Carousel";
 import Roadmap from "./components/Roadmap";
+import NewRoadmap from "./components/NewRoadmap";
 import Team from "./components/Team";
 import JoinCommunity from "./components/JoinCommunity";
 import scrollreveal from "scrollreveal";
@@ -65,7 +66,8 @@ function App() {
       <About />
       <Story />
       <Carousel />
-      <Roadmap />
+      {/* <Roadmap /> */}
+      <NewRoadmap />
       <Team />
       <Faq />
       <JoinCommunity />

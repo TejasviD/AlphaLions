@@ -52,13 +52,13 @@ export default class Footer extends React.Component {
             <div className="brand-container">
               <ul>
                 <li>
-                  <a href="https://discord.com/invite/z8hyV7eXya" className="icon-link" target="_blank"><BsDiscord /></a>
+                  <a href="https://discord.gg/Pw5JCMxfVh" className="icon-link" target="_blank"><BsDiscord /></a>
                 </li>
                 <li>
-                  <a href="https://twitter.com/AlphaLions04" className="icon-link" target="_blank"><BsTwitter /></a>
+                  <a href="https://twitter.com/CroAlphaLions" className="icon-link" target="_blank"><BsTwitter /></a>
                 </li>
                 <li>
-                  <a href="https://medium.com/alphalions/roadmap-63c3935f1a26" className="icon-link" target="_blank"><BsMedium /></a>
+                  <a href="https://medium.com/@cronosalphalions" className="icon-link" target="_blank"><BsMedium /></a>
                 </li>
               </ul>
               <div className="brand">

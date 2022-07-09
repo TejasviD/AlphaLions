@@ -26,17 +26,17 @@ export default function Navbar({ changeTheme, currentTheme }) {
           <div className="social-media-container-1">
             <ul className="social-links-1">
               <li>
-                <a className="header-icon-1" target="_blank" href="https://discord.com/invite/z8hyV7eXya">
+                <a className="header-icon-1" target="_blank" href="https://discord.gg/Pw5JCMxfVh">
                   <img className="social-icon-1" src={discord} alt="discord" />
                 </a>
               </li>
               <li>
-                <a className="header-icon-1" target="_blank" href="https://twitter.com/AlphaLions04">
+                <a className="header-icon-1" target="_blank" href="https://twitter.com/CroAlphaLions">
                   <img className="social-icon-1" src={twitter} alt="twitter" />
                 </a>
               </li>
               <li>
-                <a className="header-icon-1" target="_blank" href="https://medium.com/alphalions/roadmap-63c3935f1a26">
+                <a className="header-icon-1" target="_blank" href="https://medium.com/@cronosalphalions">
                   <img className="social-icon-1" src={medium} alt="medium" />
                 </a>
               </li>
@@ -73,17 +73,17 @@ export default function Navbar({ changeTheme, currentTheme }) {
       <div className="social-media-container">
         <ul className="social-links">
           <li>
-            <a className="header-icon" target="_blank" href="https://discord.com/invite/z8hyV7eXya">
+            <a className="header-icon" target="_blank" href="https://discord.gg/Pw5JCMxfVh">
               <img className="social-icon" src={discord} alt="discord" />
             </a>
           </li>
           <li>
-            <a className="header-icon" target="_blank" href="https://twitter.com/AlphaLions04">
+            <a className="header-icon" target="_blank" href="https://twitter.com/CroAlphaLions">
               <img className="social-icon" src={twitter} alt="twitter" />
             </a>
           </li>
           <li>
-            <a className="header-icon" target="_blank" href="https://medium.com/alphalions/roadmap-63c3935f1a26">
+            <a className="header-icon" target="_blank" href="https://medium.com/@cronosalphalions">
               <img className="social-icon medium" src={medium} alt="medium" />
             </a>
           </li>

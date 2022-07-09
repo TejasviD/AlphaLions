@@ -1,8 +1,9 @@
 import React, { useEffect, useRef } from "react";
-import alpha1 from "../assets/TEAM_01.png";
-import alpha2 from "../assets/TEAM_02.png";
-import alpha3 from "../assets/TEAM_03.png";
-import alpha4 from "../assets/TEAM_04.png";
+import alpha1 from "../assets/Junkratscu.jpg";
+import alpha2 from "../assets/Ultrapog.jpg";
+import alpha3 from "../assets/Spicy.jpg";
+import alpha4 from "../assets/DMKrypto.jpg";
+import alpha5 from "../assets/Cyber.jpg";
 import VanillaTilt from 'vanilla-tilt';
 
 export default function Team() {
@@ -21,23 +22,28 @@ export default function Team() {
   const data = [
     {
       image: alpha1,
-      name: "Oxymore",
-      role: "The Visionary",
-    },
-    {
-      image: alpha3,
-      name: "Spicy",
-      role: "The Architect",
+      name: "Junkratscu",
+      role: "The Founder",
     },
     {
       image: alpha2,
       name: "UltraPog",
-      role: "The Artist",
+      role: "Artist Founder",
+    },
+    {
+      image: alpha3,
+      name: "Spicy",
+      role: "The architect",
+    },
+    {
+      image: alpha5,
+      name: "Cyber",
+      role: "Discord Admin",
     },
     {
       image: alpha4,
-      name: "Cesar",
-      role: "The marketing strategist",
+      name: "DMKrypto",
+      role: "Marketing Manager",
     },
 
   ];
